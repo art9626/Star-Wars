@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #111;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.heder__logo {
+  display: inline-block;
+}
+
+.header__img {
+  width: 200px;
+}
+
+
+
+
+
+.section-main__list {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  height: 70vh;
+  padding: 0;
+  margin: 0;
+}
+
+
+.section-main__item {
+  position: relative;
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: flex .3s ease;
+}
+
+.section-main__item-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.section-main__item-title:hover {
+  text-shadow: 0 0 10px #FFF, 0 0 2px #FFF;
+}
+
+.section-main__item.active {
+  flex: 10;
+}
+
+.section-main__item.active .section-main__item-title {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .3s ease-in .3s;
+}
+
+.mask {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) ,#000000);                                   
+}
+
+
+.section-main__item--1 {
+  background-image: url('https://image.tmdb.org/t/p/w780/qDEvctVfAheD7x9Rzz8xcFRAGAU.jpg');
+}
+
+.section-main__item--2 {
+  background-image: url('https://image.tmdb.org/t/p/original/3UBtmYaY3lm8wGZIa0KK1YazEX8.jpg');
+}
+
+.section-main__item--3 {
+  background-image: url('https://image.tmdb.org/t/p/original/tlGkEqGffASZVOmKT3nxozQuNjA.jpg');
+}
+
+.section-main__item--4 {
+  background-image: url('https://bigrating.ru/wp-content/uploads/2021/04/zvyozdnye-voyny-epizod-4-novaya-nadezhda.jpg');
+}
+
+.section-main__item--5 {
+  background-image: url('https://image.tmdb.org/t/p/original/19xaXjRifDSgxsk5BK4uIkp0ZDu.jpg');
+}
+
+.section-main__item--6 {
+  background-image: url('https://image.tmdb.org/t/p/original/e2GMol0uQ9ReFuiVmMznvtyEhgJ.jpg');
+}
+

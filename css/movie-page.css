@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #111;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.section__banner--1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) , #111), url('https://image.tmdb.org/t/p/w780/qDEvctVfAheD7x9Rzz8xcFRAGAU.jpg');
+}
+
+.section__banner--2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) , #111), url('https://image.tmdb.org/t/p/original/3UBtmYaY3lm8wGZIa0KK1YazEX8.jpg');
+}
+
+.section__banner--3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) , #111), url('https://image.tmdb.org/t/p/original/tlGkEqGffASZVOmKT3nxozQuNjA.jpg');
+}
+
+.section__banner--4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) , #111), url('https://bigrating.ru/wp-content/uploads/2021/04/zvyozdnye-voyny-epizod-4-novaya-nadezhda.jpg');
+}
+
+.section__banner--5 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) , #111), url('https://image.tmdb.org/t/p/original/19xaXjRifDSgxsk5BK4uIkp0ZDu.jpg');
+}
+
+.section__banner--6 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) , #111), url('https://image.tmdb.org/t/p/original/e2GMol0uQ9ReFuiVmMznvtyEhgJ.jpg');
+}
+
+.section__banner {
+  width: 100vw;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.section-about__container {
+  display: flex;
+  padding: 80px 15px;
+}
+
+.section-about__box {
+  display: flex;
+}
+
+.section-about__box--left {
+  flex-basis: 40%;
+  justify-content: center;
+}
+
+.section-about__poster {
+  align-self: flex-start;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.section-about__box--right {
+  flex-basis: 60%;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.section-about__heading {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.section-about__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.section-about__lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.section-about__list-container {
+  margin-right: 40px;
+}
+
+.section-about__list-heading {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section-about__list { 
+  margin: 0;
+  padding: 0;
+}
+
+.section-about__btn {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: rgb(219, 200, 29);
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+  transition: box-shadow .2s ease;
+}
+
+.section-about__btn:hover {
+  box-shadow: 0 0 10px rgb(219, 200, 29), 0 0 10px rgb(219, 200, 29);
+}
